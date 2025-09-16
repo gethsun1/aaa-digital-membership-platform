@@ -200,9 +200,24 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-muted/30 py-8 px-4">
-        <div className="container mx-auto text-center">
-          <p className="text-muted-foreground">Demo version – Powered by Next.js | Designed by Gethsun Misesi</p>
+      <footer className="border-t border-border bg-card/50 py-10 px-4">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <Brand />
+              <p className="text-sm text-muted-foreground">Member Benefits Platform</p>
+            </div>
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <Link href="/privacy" className="hover:text-primary">Privacy</Link>
+              <span>•</span>
+              <Link href="/terms" className="hover:text-primary">Terms</Link>
+              <span>•</span>
+              <a href="mailto:support@aaa-platform.com" className="hover:text-primary">support@aaa-platform.com</a>
+            </div>
+          </div>
+          <div className="mt-4 text-center md:text-left text-xs text-muted-foreground">
+            © {new Date().getFullYear()} AAA. All rights reserved.
+          </div>
         </div>
       </footer>
     </div>
